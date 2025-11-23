@@ -18,7 +18,9 @@
                 // Manage container applications
                 "ms-azuretools.vscode-containers",
                 // Data viewer
-                "ms-toolsai.datawrangler"
+                "ms-toolsai.datawrangler",
+                // Jupyter notebooks
+                "ms-toolsai.jupyter"
             ]
         }
     }
