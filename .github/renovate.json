@@ -8,7 +8,6 @@
   "timezone": "Europe/Berlin",
   "labels": ["renovate"],
   "semanticCommits": "enabled",
-  "semanticCommitType": "build",
   "semanticCommitScope": "deps",
   "pinDigests": true,
   "minimumReleaseAge": "3 days",
@@ -20,6 +19,11 @@
     "addLabels": ["security"]
   },
   "packageRules": [
+    {
+      "description": "Dependency bumps change what the images are built from.",
+      "matchPackageNames": ["*"],
+      "semanticCommitType": "build"
+    },
     {
       "description": "Group my own devcontainer features so their releases land in a single pull request.",
       "matchManagers": ["devcontainer"],
